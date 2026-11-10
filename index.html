@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Evoluce – roguelike, který se učí</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/hud.css">
+<link rel="stylesheet" href="css/overlay.css">
+</head><body>
+<div id="hud" class="h"><div id="hp"><div id="hpf"></div></div><div id="wv" style="margin-top:8px"></div></div>
+<div id="sc" class="h"></div><div id="bs" class="h"></div><div id="bb" class="h"><div id="bbf"></div></div><div id="bn" class="h"></div><div id="pr" class="h"></div><div id="fl" class="h"></div><div id="fps" class="h"></div><div id="chat" class="h"></div><div id="vote" class="h"></div><input id="cin" maxlength="120" placeholder="Zpráva… (Enter = odeslat, Esc = zavřít)" autocomplete="off" onkeydown="chatKey(event)" style="display:none"><div id="ov"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="js/core/utils.js"></script>
+<script src="js/core/state.js"></script>
+<script src="js/core/options.js"></script>
+<script src="js/core/settings.js"></script>
+<script src="js/core/pprofile.js"></script>
+<script src="js/core/audio.js"></script>
+<script src="js/world/scene.js"></script>
+<script src="js/entities/enemies.js"></script>
+<script src="js/ai/brain.js"></script>
+<script src="js/ai/genome.js"></script>
+<script src="js/ai/strategy.js"></script>
+<script src="js/ai/nn.js"></script>
+<script src="js/ai/evolution.js"></script>
+<script src="js/ai/behavior.js"></script>
+<script src="js/ai/memory.js"></script>
+<script src="js/ai/trainer.js"></script>
+<script src="js/plugins/llm.js"></script>
+<script src="js/entities/player.js"></script>
+<script src="js/entities/projectiles.js"></script>
+<script src="js/systems/profile.js"></script>
+<script src="js/systems/hazards.js"></script>
+<script src="js/systems/waves.js"></script>
+<script src="js/systems/update.js"></script>
+<script src="js/world/fx.js"></script>
+<script src="js/world/view.js"></script>
+<script src="js/ui/hud.js"></script>
+<script src="js/ui/settingsui.js"></script>
+<script src="js/net/net.js"></script>
+<script src="js/core/input.js"></script>
+<script src="js/core/game.js"></script>
+<script src="js/core/loop.js"></script>
+<script src="js/main.js"></script>
+</body></html>

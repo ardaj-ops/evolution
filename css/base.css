@@ -1,0 +1,9 @@
+/* css/base.css – základ stránky, motiv světlý/tmavý */
+:root{--bg:#eef1fb;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0e1c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0e1c;color-scheme:dark}
+html,body{height:100%;margin:0}
+body{background:var(--bg);overflow:hidden;font:14px system-ui,sans-serif;color:#e8ecff;user-select:none}
+canvas{display:block}
+.h{position:fixed;pointer-events:none}
